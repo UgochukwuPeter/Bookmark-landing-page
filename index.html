@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="header">
+        <nav class="navbar navbar-expand-sm mobile-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo-bookmark.svg" alt="logo"
+            /></a>
+            <img class="btn icon-btn" src="./images/icon-hamburger.svg" alt="">
+            <div id="navbarSupportedContent">
+              <ul class="navbar-nav nav-edit">
+                <div class="mobile-nav-logo">
+                  <div class="mobileLogo">
+                    <img class="" src="./images/logo-bookmark.svg" alt="">
+                    <span class="text-light nav-book">Bookmark</span>
+                  </div>
+                  <img src="./images/icon-close.svg" alt="" class="icon-close">
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase text-grey" href="#"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase mx-3" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase mx-3" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-uppercase btn btn-danger head-btn" href="#">Login</a>
+                </li>
+                <div class="nav-socialImg">
+                  <img src="./images/icon-facebook.svg"  alt="">
+                  <img src="./images/icon-twitter.svg" class="mx-3" alt="">
+                </div>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+        <div class="container mobile-head-wrapper">
+          <div class="row  mt-5 ">
+            <div class="col-md col-sm-12 mobile-head-img ">
+              <img src="./images/illustration-hero.svg" alt="" />
+            </div>
+            <div class="col-md col-sm-12 mt-5 pt-5 left">
+              <h1 class="h1 h1-heading">A Simple Bookmark Manager</h1>
+              <p class="para">
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+
+              <button type="submit" class="btn btn-sm btn-primary btn-chrome btn-mobile-chrome">
+                Get it on Chrome
+              </button>
+              <button type="submit" class="btn btn-sm btn-light btn-fox">
+                Get it on Firefox
+              </button>
+            </div>
+            <div class="col-md col-sm-12 right">
+              <img src="./images/illustration-hero.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="background-img"></div>
+      </header>
+
+      <section class="feature-wrapper">
+        <div class="container feature">
+          <p class="h2 mb-2 f-heading">Features</p>
+          <p class="f-para text-dark mb-5">Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you can
+            access them on the go.</p>
+
+            <ul class="nav f-bookmark align-items-center">
+  <li class="nav-item">
+    <a class="nav-link active text-dark simpleClick " data-bs-toggle="tab" href="#home">Simple Bookmarking</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mx-5 text-dark speedyClick" data-bs-toggle="tab" href="#menu1">Speedy Searching</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mx-5 text-dark easyClick" data-bs-toggle="tab" href="#menu2">Easy Sharing</a>
+  </li>
+</ul>
+<div class="f-line mb-5"></div>
+            <!-- Nav tabs -->
+
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">
+     <div class="row">
+              <div class="col-md col-sm-12 f-left">
+                <img src="./images/illustration-features-tab-1.svg" alt="">
+              </div>
+              <div class="col-md col-sm-12 f-right mt-5 ">
+                <p class="h1 text-align-end b-h1 mb-3">Bookmark in one click</p>
+                <p class="text-align-end b-p">Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how you manage your
+                  favourite sites.</p>
+                  <button type="submit" class="btn btn-primary btn-md mt-5">More Info</button>
+              </div>
+            </div>
+  </div>
+  <div class="tab-pane container fade" id="menu1">
+    <div class="row">
+      <div class="col-md col-sm-12 f-left">
+        <img src="./images/illustration-features-tab-2.svg" alt="">
+      </div>
+      <div class="col-md col-sm-12 f-right mt-5 ">
+        <p class="h1 text-align-end b-h1 mb-3">Intelligent search</p>
+        <p class="text-align-end b-p">Our powerful search feature
+          will help you find saved sites in no time at all. No need to trawl through
+          all of your bookmarks.</p>
+          <button type="submit" class="btn btn-primary btn-md mt-5">More Info</button>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="menu2">
+    <div class="row">
+      <div class="col-md col-sm-12 f-left">
+        <img src="./images/illustration-features-tab-3.svg" class="mx-5 mb-3" alt="">
+      </div>
+      <div class="col-md col-sm-12 f-right mt-5 ">
+        <p class="h1 text-align-end b-h1 mb-3">Share your bookmarks</p>
+        <p class="text-align-end b-p">Easily share your
+          bookmarks and collections with others. Create a shareable link that you can
+          send at the click of a button.</p>
+          <button type="submit" class="btn btn-primary btn-md mt-5">More Info</button>
+      </div>
+    </div>
+  </div>
+</div>
+           
+        </div>
+       <div class="f-bk"></div>
+      </section>
+      
+      <section class="ex-container container  mt-5 pt-5">
+        <p class="h1 down-h1">Download the extension</p>
+        <p class="down-desc">We’ve got
+          more browsers in the pipeline. Please do let us know if you’ve got a
+          favourite you’d like us to prioritize</p>
+          <div class="row mt-5">
+            <div class="col-md browser-wrapper pt-4">
+              <img src="./images/logo-chrome.svg" alt="" class="mb-3">
+              <p class="h5 mb-2">Add to Chrome</p>
+              <p class="mb-4 mx-text">Maximum version 62</p>
+              <div class="line mb-3"></div>
+              <button class="btn  btn-primary">Add & Install
+                Extension</button>
+            </div>
+            <div class="col-md browser-wrapper pt-4 mt-3">
+              <img src="./images/logo-firefox.svg" alt="" class="mb-3">
+              <p class="h5 mb-2">Add to Firefox</p>
+              <p class="mb-4 mx-text">Maximum version 65</p>
+              <div class="line mb-3"></div>
+              <button class="btn  btn-primary">Add & Install
+                Extension</button>
+            </div>
+            <div class="col-md browser-wrapper pt-4 mt-5">
+              <img src="./images/logo-opera.svg" alt="" class="mb-3">
+              <p class="h5 mb-2">Add to Opera</p>
+              <p class="mb-4 mx-text">Maximum version 46</p>
+              <div class="line mb-3"></div>
+              <button class="btn  btn-primary mb-3">Add & Install
+                Extension</button>
+            </div>
+          </div>
+      </section>
+
+      <section class="ex-container frequent-wrapper container  mt-5 pt-5">
+        <p class="h1 down-h1">Frequently
+          Asked Questions</p>
+        <p class="down-desc">Here are some of our FAQs. If you have any other questions
+    you’d like answered please feel free to email us.</p>
+
+    <div class="accordion-container">
+      <div id="accordion">
+
+        <div class="accord-wrapper">
+          <div class="accord-content">
+            <a  href="#collapseOne" id="one"  data-bs-toggle="collapse">
+              What is Bookmark?
+            </a>
+            <img class="accord-img collapseImgOne" src="./images/icon-arrow.svg" alt="">
+          </div>
+          <div id="collapseOne" class="collapse accord-body" data-bs-parent="#accordion">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
+mattis.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="accord-content">
+            <a href="#collapseTwo" class="collapsed" id="two" data-bs-toggle="collapse">
+              How can I request a new browser?
+            </a>
+            <img class="accord-img twoImg" src="./images/icon-arrow.svg" alt="">
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="accord-content">
+            <a href="#collapseThree" class="collapsed" id="three" data-bs-toggle="collapse">
+              Is there a mobile app?
+            </a>
+            <img class="accord-img" id="collapseImgThree" src="./images/icon-arrow.svg" alt="">
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
+dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
+mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="accord-content">
+            <a href="#collapseFour" class="collapsed four" data-bs-toggle="collapse">
+              What about other Chromium browsers?
+            </a>
+            <img class="accord-img fourImg" src="./images/icon-arrow.svg" alt="">
+          </div>
+          <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+            <div>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
+euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut
+velit. More Info 35,000+ already joined Stay up-to-date with what we’re
+doing Contact Us Features Pricing Contact
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <button type="submit" class="btn btn-primary mt-5 info-btn">More info</button>
+    </div>
+         
+
+          
+      </section>
+
+      <footer class="footer mt-5 pt-5">
+        <!-- <h1 data-target = '35000' class="count">0</h1>
+        <h1 data-target = '0' class="count"></h1> -->
+        <!-- <h1 data-target = '511' class="count">0</h1> -->
+        <div class="member-wrapper">
+          <p data-target = '35000' class="count">0</p>
+          <p data-target = '0' class="count"></p>
+          <p class="text-uppercase mx-2"> + Already Joined</p>
+        </div>
+        <h1 class="h1 foot-head">
+          Stay-up-to-date with what we're doing
+        </h1>
+
+        <div class="mt-5 mb-3 row w-50 form-container">
+          <input class="form-control col-md form-width" id="email" type="text" placeholder="Enter your email address">
+          <img src="./images/icon-error.svg"  class="icon-err" alt="">
+          <button class="btn btn-danger btn-sm col-md-3 mx-3 foot-btn">Contact Us</button>
+        </div>
+        <span class="input-err">whoops, make sure it's an email</span>
+      
+         <div class="footer-link mt-3 pt-3 pb-2 row w-100">
+          <div class="col-md-2 mx-5 foot-logo">
+            <img class="foot-img" src="./images/logo-bookmark.svg" alt="">
+            <span class="text-light f-logo">Bookmark</span>
+          </div>
+          
+          <div class="col-md-8 foot-nav">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="">contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md justify-content-start">
+            <img  src="./images/icon-facebook.svg" alt="">
+            <img class="mx-3" src="./images/icon-twitter.svg" alt="">
+          </div>
+
+         </div>
+
+
+      </footer>
+
+
+    </div>
+
+      <!--   
+            More Info Download the extension We’ve got
+    more browsers in the pipeline. Please do let us know if you’ve got a
+    favourite you’d like us to prioritize. Add to Chrome Minimum version 62 Add
+    & Install Extension Add to Firefox Minimum version 55 Add & Install
+    Extension Add to Opera Minimum version 46 Add & Install Extension Frequently
+    Asked Questions Here are some of our FAQs. If you have any other questions
+    you’d like answered please feel free to email us. -->
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
